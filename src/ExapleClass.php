@@ -22,14 +22,14 @@ class ExapleClass
     {
         $border = '||=';
 
-        foreach ($this->say as $s){
+        for($i = 0; $i < strlen($this->say); $i++){
             $border.= '=';
         }
 
         $border.= '=||';
 
         echo $border;
-        echo "<br/>|| {$this->say} ||<br/>";
+        echo "<br/>||={$this->say}=||<br/>";
         echo $border;
     }
 }
